@@ -1,3 +1,11 @@
+setwd('C:/Users/chris/OneDrive/Desktop/UCI HAR Dataset')
+
+#reading in result files and merging
+testdata.file<-read.table('test/X_test.txt')
+traindata.file<-read.table('train/X_train.txt')
+data<-rbind(testdata.file,traindata.file)
+
+#reading in the 561 feature labels and using them to rename data columns
 setlabels.file<-read.table('features.txt')
 colnames(data)<-setlabels.file[,2]
 
@@ -31,8 +39,8 @@ library(dplyr)
 averages=data.frame()
 for(i in 1:30){
     averages<-rbind(averages,(data.meanstd %>% 
-                                  filter(Subject==i) %>%
-                                  group_by(Activity) %>%
-                                  summarise_at(c(1:80),mean)))
+                filter(Subject==i) %>%
+                group_by(Activity) %>%
+                summarise_at(c(1:80),mean)))
 }
 
