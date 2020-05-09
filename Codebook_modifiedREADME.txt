@@ -1,4 +1,5 @@
 ***NOTES FROM ORIGINAL README; MARIHARRI'S COMMENTS TO THE RIGHT OF THE ***
+***IN OUTPUT, ACTIVITY ON FAR LEFT, SUBJECT ON FAR RIGHT
 
 The dataset includes the following files:
 =========================================
