@@ -1,2 +1,2 @@
 # CleaningDataProject
-Project for Getting &amp; Cleaning Data course
+Please see comments in code describing how code works
